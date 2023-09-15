@@ -1,6 +1,6 @@
 # Evaluation 1
 ## About Raw Result
-The each file of raw result is approx. 800MB.  
+Each file of the raw result is approx. 800MB.  
 Please post an issue if you want.
 
 ## Environments
