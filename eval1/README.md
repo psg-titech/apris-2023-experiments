@@ -11,7 +11,7 @@ Please post an issue if you want.
 ![Circuit Diagram](connection.jpg)
 
 ## Method
-### Program for Microcontroller Preparation
+### Prepare Program Running on The Microcontroller
 #### No-sleep
 In `programs` directory,
 ```bash
@@ -27,7 +27,7 @@ Make sure that the following line is in Line 92 of `programs/main_light-sleep_an
 
 and then, in `programs` directory,
 ```bash
-$ mv main_light-sleep_and_deep-sleep
+$ mv main_light-sleep_and_deep-sleep main
 $ idf.py flash
 ```
 
@@ -39,7 +39,7 @@ Make sure that the following line is in Line 92 of `programs/main_light-sleep_an
 
 and then, in `programs` directory,
 ```bash
-$ mv main_light-sleep_and_deep-sleep
+$ mv main_light-sleep_and_deep-sleep main
 $ idf.py flash
 ```
 
