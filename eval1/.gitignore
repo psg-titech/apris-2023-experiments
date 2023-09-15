@@ -1,0 +1,6 @@
+# Fortran 90 Module Output
+*.mod
+
+# C and Fortran Output Binary
+*.out
+*.exe

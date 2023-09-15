@@ -1,0 +1,6 @@
+plotData("results/no-sleep.csv", "No-sleep")
+print("no-sleep.svg")
+plotData("results/light-sleep.csv", "Light-sleep")
+print("light-sleep.svg")
+plotData("results/deep-sleep.csv", "Deep-sleep")
+print("deep-sleep.svg")

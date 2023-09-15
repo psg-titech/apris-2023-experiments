@@ -1,0 +1,25 @@
+switchmodule Main {
+  in dist(0) : Int, btn(False) : Bool
+  out frequency : Int, volume : Int,
+      stateLed : Bool
+  shared btn_released(False) : Bool,
+         volume_mode(1) : Int
+  init On
+  shared node btn_released = (if btn then False else True) && btn@last
+  shared node volume_mode =
+    if btn_released then (volume_mode@last + 1) % 6
+    else volume_mode@last
+  state On on main {
+    node dist_avg(0) = (dist * 6 + dist_avg@last * 4) / 10
+    out node frequency = dist_avg
+    out node volume = volume_mode * 20
+    out node stateLed = True
+    switch: if dist_avg >= 1500 then Off else Retain
+  }
+  state Off on main {
+    out node frequency = 0
+    out node volume = 0
+    out node stateLed = False
+    switch: if dist < 1500 then On else Retain
+  }
+}
