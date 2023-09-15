@@ -48,11 +48,11 @@ $ idf.py flash
 
 * Source meter mode
 * Supply voltage: 3.3V
-* Sampling paramter : 10^5 samples per second and 300 seconds
+* Sampling paramter : 10^5 samples per second for 300 seconds
 * Enabled Digital Channel 0.
 
 ### Measurement
-After evaluation boards powered on, Theremin automatically starts to work.  
+After the evaluation board powered on, the Theremin automatically starts to work.  
 
 ### Charts Output
 `csv-cut.pl` is a program for cutting the raw result.  
