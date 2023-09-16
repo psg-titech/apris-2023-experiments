@@ -51,7 +51,7 @@ The results are available as `Light-sleep.csv` and `Deep-sleep.csv`.
 * ESP8266 board(Node MCU Lolin V3)
 
 ### Connection
-Please propertly connect GNDs.
+Please properly connect GNDs.
 ![Connection](connection_test.jpg)
 
 
