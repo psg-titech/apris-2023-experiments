@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "apris2023_eval2")(type "KiCad")(uri "${KIPRJMOD}/apris2023_eval2.kicad_sym")(options "")(descr ""))
+)
